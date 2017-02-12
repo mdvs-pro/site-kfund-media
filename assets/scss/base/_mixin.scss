@@ -1,22 +1,19 @@
+//------------------------------------------------------------------------------
+//  Set a rem font size with pixel fallback by Nicolas Gallagher
+//
+//	Rem is similar to the em value, but instead of being relative to the parent
+//	element it’s relative to the font-size set in the <html>.
+//------------------------------------------------------------------------------
+//	Сomposed:
+// 	@mixin font-size()
+//	@function calculateRem()
+//------------------------------------------------------------------------------
+//  Url: https://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540
+//------------------------------------------------------------------------------
 
-@mixin clearfix {
-	zoom:1;
-
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
-}
-
-@mixin absolute-list-circle($size) {
-	position: absolute;
-	border-radius: 50%;
-	width: $size;
-	height: $size;
-	top: $size / 2;
-	margin-top: $size / 4;
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
 }
 
 //-----------gradient---------------
@@ -145,4 +142,35 @@
 	transition-duration: $time;
 	transition-timing-function: ease;
 	transition-property: $properies;
+}
+
+//------------------------------------------------------------------------------
+//  SVG background images with PNG and retina fallback
+//
+//	This mixin depends on Modernizr and creates a bit more work for you when creating
+//	images for your site, but it’s really worth it in the end.
+//------------------------------------------------------------------------------
+//	All in all you need this:
+//	pattern.svg
+//	pattern.png
+//	pattern@2x.png
+//------------------------------------------------------------------------------
+//  Url: https://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540
+//------------------------------------------------------------------------------
+
+$image-path: '../img' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+@mixin background-image($name, $size:false){
+	background-image: url(#{$image-path}/#{$name}.svg);
+	@if($size){
+		background-size: $size;
+	}
+	.no-svg &{
+		background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+		@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+			background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+		}
+	}
 }
