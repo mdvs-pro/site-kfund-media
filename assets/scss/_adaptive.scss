@@ -4,17 +4,28 @@
   }
 }
 
-@include media-breakpoint-up(xs) {
+@include media-breakpoint-down(xs) {
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(sm) {
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
+
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    &__burger {
+      display: inline-block;
+    }
+  }
+
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-down(lg) {
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-down(xl) {
 }

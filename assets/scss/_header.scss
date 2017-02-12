@@ -1,3 +1,38 @@
 .header {
 
+  &__column {
+    align-self: center;
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__logo {
+    @extend %ibm;
+    width: 32.4rem;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__additional {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  &__lang li {
+    @extend %ibt;
+  }
+
+  &__menu li {
+    @extend %ibt;
+  }
 }

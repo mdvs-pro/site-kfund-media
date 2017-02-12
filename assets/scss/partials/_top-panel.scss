@@ -1,0 +1,19 @@
+.top-panel {
+  background: $bgcolor;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    height: 5rem;
+  }
+
+  &__div {
+    align-self: center;
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+}
