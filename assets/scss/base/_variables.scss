@@ -1,0 +1,35 @@
+//  Variables
+
+// Colors
+
+$bgcolor:                   #ffffff;
+$color_white:               #ffffff;
+$color_gray:                #dcdcdc;
+$primary_color:             #3f4147;
+$secondary_color:           #a70c5d;
+$secondary_color_darker:    #9f2865;
+$light_color:               #9a9a9a;
+$dark_color:                #454545;
+$border_color:              #f4f4f4;
+
+
+// Fonts
+
+$primary_font: 'Calibre', sans-serif;
+$secondary_font: '';
+
+$font-size-base:            0.625rem;
+
+// Breakpoints
+
+$grid-xs-min:   400px;
+$grid-xs-max:   575px;
+$grid-sm-min:   576px;
+$grid-sm-max:   767px;
+$grid-md-min:   768px;
+$grid-md-max:   991px;
+$grid-lg-min:   992px;
+$grid-lg-max:   1199px;
+$grid-xl-min:   1200px;
+
+$time: 0.3s;
