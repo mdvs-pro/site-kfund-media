@@ -104,4 +104,12 @@
 	opacity: 1;
 }
 
+%bg-gradient-gray {
+	background: #ffffff;
+	background: -moz-linear-gradient(left,  #ffffff 0%, #f4f4f4 100%);
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#f4f4f4 100%);
+	background: linear-gradient(to right,  #ffffff 0%,#f4f4f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=1 );
+
+}
 

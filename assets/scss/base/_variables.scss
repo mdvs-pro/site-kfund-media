@@ -11,14 +11,14 @@ $secondary_color:           #12699b;
 
 $secondary_color_darker:    #9f2865;
 $light_color:               #9a9a9a;
-$dark_color:                #454545;
+$dark_color:                #313131;
 $border_color:              #f4f4f4;
 
 
 // Fonts
 
-$primary_font: 'Calibre', sans-serif;
-$secondary_font: '';
+$primary_font: 'HelveticaNeueCyr', sans-serif;
+$secondary_font: 'NewBaskervilleC', sans-serif;
 
 $font-size-base:            10px;
 
@@ -96,7 +96,7 @@ $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1140px
+        xl: 1280px
 ) !default;
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 

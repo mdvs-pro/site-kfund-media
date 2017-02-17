@@ -6,18 +6,19 @@ html {
 }
 
 body {
-	@include font-size(15px);
+	@include font-size(14.3px);
+	font-family: $primary_font;
+	font-weight: 100;
 	line-height: 2.4rem;
-    font-weight: 400;
 	color: $primary_color;
 }
 
 h2, .h2 {
+	font-family: $secondary_font;
 	font-weight: 600;
 	font-size: 3rem;
-	line-height: 3.5rem;
+	line-height: 3.6rem;
 	color: $dark_color;
-	text-transform: uppercase;
 }
 
 h3, .h3 {

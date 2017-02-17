@@ -1,11 +1,44 @@
-.entry-header{
+.post {
+  padding: 8rem 2rem 2rem 2rem;
 
+  &__type {
+    color: $secondary_color;
+  }
+
+  &--bg {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &--clr-white, &--clr-white &__type, &--clr-white &__header {
+    color: $color-white;
+  }
+
+  &--abs-right-image {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+
+    height: 100%;
+
+    .post__content {
+      width: 47%;
+    }
+
+    .post__image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      line-height: 0;
+
+      height: 110%;
+      //max-width: 65%;
+
+      img {
+        max-width: none;
+        height: 100%;
+      }
+    }
+  }
 }
 
-.entry-content{
-
-}
-
-.post-style{
-
-}
