@@ -10,7 +10,10 @@
     background-position: center center;
   }
 
-  &--clr-white, &--clr-white &__type, &--clr-white &__header {
+  &--clr-white,
+  &--clr-white &__type,
+  &--clr-white &__header,
+  &--clr-white a {
     color: $color-white;
   }
 

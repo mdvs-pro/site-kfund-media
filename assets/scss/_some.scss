@@ -82,12 +82,17 @@ ul {
 }
 
 .link {
+	text-decoration: none;
 
 	&--arrow {
 
 		&:hover .arrow {
 			transform: scaleX(1.4);
 		}
+	}
+
+	&--more {
+		font-weight: 600;
 	}
 }
 

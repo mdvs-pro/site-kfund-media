@@ -52,7 +52,31 @@
 			border-width: .5rem;
 			border-left-color: $primary_color;
 		}
+
 	}
+
+	.link--more &--right {
+
+		&:before {
+			background-color: $secondary_color;
+		}
+
+		&:after {
+			border-left-color: $secondary_color;
+		}
+	}
+
+	.post--clr-white .link--more &--right {
+
+		&:before {
+			background-color: $color_white;
+		}
+
+		&:after {
+			border-left-color: $color_white;
+		}
+	}
+
 }
 
 .icon-round {
