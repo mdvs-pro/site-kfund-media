@@ -1,6 +1,10 @@
 .top-panel {
   background: $bgcolor;
 
+  a {
+    text-decoration: none;
+  }
+
   p {
     margin-bottom: 0;
   }
@@ -10,9 +14,11 @@
   }
 
   &__div {
+    margin-right: 2rem;
     align-self: center;
 
     &--right {
+      margin-right: 0;
       margin-left: auto;
     }
   }

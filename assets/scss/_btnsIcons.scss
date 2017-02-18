@@ -20,6 +20,60 @@
 	}
 }
 
+.arrow {
+	@extend %ibm;
+	@include animation(transform);
+	width: 1rem;
+	height: 1.2rem;
+	position: relative;
+	margin: 0 1rem;
+
+	&:before, &:after {
+		content: '';
+		border-color: transparent;
+		border-style: solid;
+		position: absolute;
+	}
+
+	&--right {
+
+		&:before {
+			border: none;
+			background-color: $primary_color;
+			height: 30%;
+			width: 50%;
+			top: 25%;
+			left: 0;
+		}
+
+		&:after {
+			left: 50%;
+			top: 0;
+			border-width: .5rem;
+			border-left-color: $primary_color;
+		}
+	}
+}
+
+.icon-round {
+	@extend %ibm;
+	text-align: center;
+	width: 1.7rem;
+	height: 1.7rem;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+	box-sizing: border-box;
+	background: $secondary_color;
+	color: $color_white;
+	vertical-align: text-bottom;
+
+	.fa {
+		line-height: 1.7rem;
+		font-size: 1.3rem;
+		@extend %ibt;
+	}
+}
+
 @keyframes spin {
 	from {transform:rotate(0deg);}
 	to {transform:rotate(360deg);}
