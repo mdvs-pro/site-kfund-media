@@ -1,0 +1,14 @@
+.ideas {
+  padding: 2rem 0;
+  margin-bottom: 3.5rem;
+  height: 10rem;
+  background: $secondary_color;
+
+  .heading {
+    color: $color_white;
+
+    &:before {
+      background: $color_white;
+    }
+  }
+}

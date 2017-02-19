@@ -22,11 +22,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-weight: 600;
-	font-size: 2.8rem;
-	line-height: 3rem;
+	font-family: $secondary_font;
+	font-weight: 400;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
 	color: $primary_color;
-	text-transform: uppercase;
 }
 
 h4, .h4 {
@@ -118,4 +118,62 @@ ul {
 		}
 	}
 
+}
+
+.heading {
+	display: block;
+	position: relative;
+	font-size: 1.7rem;
+	font-weight: 600;
+	padding-top: 1rem;
+	color: #313131;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		width: 2.5rem;
+		background: $secondary_color;
+		height: 0.3rem;
+	}
+
+	&--left {
+		float: left;
+		width: 13rem;
+	}
+
+	&--left + div {
+		overflow: hidden;
+	}
+
+	&--top {
+		margin-bottom: 3rem;
+	}
+}
+
+.column {
+
+	&--mrg-b {
+		margin-bottom: 3rem;
+	}
+
+	&--border-r {
+		border-right: 0.1rem solid $color_gray;
+	}
+
+	&--border-t {
+		border-top: 0.1rem solid $color_gray;
+	}
+
+	&--border-b {
+		border-bottom: 0.1rem solid $color_gray;
+	}
+
+	&--top {
+
+		.post {
+			padding-top: 0;
+		}
+	}
 }

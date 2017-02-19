@@ -1,8 +1,25 @@
 .post {
-  padding: 8rem 2rem 2rem 2rem;
+  padding: 3rem 0;
 
   &__type {
     color: $secondary_color;
+  }
+
+  &__image {
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__image--left {
+    float: left;
+    width: 17rem;
+    margin-right: 2.5rem;
+
+    & + .post__content {
+      overflow: hidden;
+    }
   }
 
   &--bg {
@@ -15,33 +32,6 @@
   &--clr-white &__header,
   &--clr-white a {
     color: $color-white;
-  }
-
-  &--abs-right-image {
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-
-    height: 100%;
-
-    .post__content {
-      width: 47%;
-    }
-
-    .post__image {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      line-height: 0;
-
-      height: 110%;
-      //max-width: 65%;
-
-      img {
-        max-width: none;
-        height: 100%;
-      }
-    }
   }
 }
 
