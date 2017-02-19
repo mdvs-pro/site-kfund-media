@@ -177,3 +177,8 @@ ul {
 		}
 	}
 }
+
+.logo {
+	@extend %ibm;
+	width: 32.4rem;
+}
