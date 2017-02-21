@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-
+	initSliders();
 });
 
 jQuery(window).load(function () {
@@ -29,3 +29,14 @@ var mobileNav = {
 		$(this.className).hasClass(this.activeClass) ? this.close() : this.open();
 	}
 };
+
+function initSliders(){
+	$('.js_ideas__slider').owlCarousel({
+		margin:40,
+		nav:true,
+		stagePadding:40,
+		loop:true,
+		navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+	});
+}
+
