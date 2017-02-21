@@ -5,7 +5,23 @@
     color: $secondary_color;
   }
 
+  &__special {
+    color: $color_white;
+    background: $secondary_color;
+    font-weight: 600;
+    border-radius: 0.3rem;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    padding: 1rem 1.5rem;
+    line-height: 1;
+    opacity: 0.8;
+  }
+
   &__image {
+    position: relative;
 
     img {
       width: 100%;
