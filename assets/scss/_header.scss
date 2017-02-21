@@ -33,11 +33,16 @@
   &__menu li {
     @extend %ibt;
   }
+
+  &__search {
+    color: $color_social;
+  }
 }
 
 .menu {
 
   &__link {
+    color: $dark_color;
     text-decoration: none;
   }
 }

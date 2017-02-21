@@ -6,6 +6,15 @@
     margin-bottom: 0;
   }
 
+  &__date {
+    font-size: 1.234rem;
+  }
+
+  &__founder {
+    font-size: 1.234rem;
+    text-transform: uppercase;
+  }
+
   &__wrapper {
     height: 5rem;
   }

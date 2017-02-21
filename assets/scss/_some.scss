@@ -38,7 +38,7 @@ h4, .h4 {
 }
 
 p {
-	margin-bottom: 2rem;
+	margin-bottom: 1.538rem;
 }
 
 a {
@@ -93,6 +93,7 @@ ul {
 
 	&--more {
 		font-weight: 600;
+		color: $dark_color;
 	}
 }
 
@@ -141,6 +142,9 @@ ul {
 	&--left {
 		float: left;
 		width: 13rem;
+		padding-right: 1.584rem;
+		font-size: 1.584rem;
+		font-weight: 500;
 	}
 
 	&--left + div {
@@ -148,14 +152,16 @@ ul {
 	}
 
 	&--top {
-		margin-bottom: 3rem;
+		margin-bottom: 1.538rem;
+		font-size: 1.584rem;
+		font-weight: 500;
 	}
 }
 
 .column {
 
 	&--mrg-b {
-		margin-bottom: 3rem;
+		margin-bottom: 0rem;
 	}
 
 	&--border-r {
