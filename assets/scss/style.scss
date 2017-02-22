@@ -1,10 +1,10 @@
 /*!
  * -------------------------------------
 Theme Name: kfund_media
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: kfund-media.mdvs.pro
+Author: yuchi.mdvs
+Author URI: mdvs.pro
+Description: Stylish news platform
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -26,21 +26,22 @@ Tags:
 
 
 //	Style
-@import "_some";			// стили основные-всякие
-@import "_btnsIcons";	    // кнопки, иконки
-@import "_header";		    // стили шапки
-@import "_footer";		    // стили футера
-@import "_sidebar";		    // стили виджетов сайдбара
-@import "_excerpt";			// post excerpts
-@import "_post";            // стили поста
-@import "_libs";            // стили библиотек/плагинов
+@import "_some";			// general styles
+@import "_btnsIcons";
+@import "_header";
+@import "_footer";
+@import "_sidebar";		    // sidebar and sidebar widgets
+@import "_excerpt";
+@import "_post";
+@import "_libs";            // libraries and plugins
+@import "_entry";
 
 @import "partials/top-panel";
 @import "partials/_mobile-nav";
 
 @import "partials/_frontpage";
 
-@import "_adaptive";			// стили адаптивки
+@import "_adaptive";
 
 
 

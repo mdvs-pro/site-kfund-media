@@ -59,6 +59,7 @@ strong, b, .strong {
 }
 
 .img--responsive {
+	display: block;
 	width: 100%;
 }
 
@@ -195,4 +196,15 @@ ul {
 .logo {
 	@extend %ibm;
 	width: 32.4rem;
+}
+
+blockquote {
+
+	&:before {
+		font: 5rem/1 FontAwesome;
+		content: "\f10d";
+		display: block;
+		text-decoration: inherit;
+		color: $secondary_color;
+	}
 }
