@@ -13,6 +13,14 @@ body {
 	color: $primary_color;
 }
 
+h1, .h1 {
+	font-family: $secondary_font;
+	font-weight: 400;
+	font-size: 4rem;
+	line-height: 4.6rem;
+	color: $primary_color;
+}
+
 h2, .h2 {
 	font-family: $secondary_font;
 	font-weight: 600;
