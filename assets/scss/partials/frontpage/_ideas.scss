@@ -1,5 +1,5 @@
 .ideas {
-  padding: 3rem 0 0;
+  padding: 3rem 0 2rem;
   margin-bottom: 3.5rem;
   background: $secondary_color;
 
@@ -8,34 +8,6 @@
 
     &:before {
       background: $color_white;
-    }
-  }
-}
-
-.slider {
-
-  &__div {
-    transform: translateY(-2.1rem);
-  }
-
-  .active &__item {
-
-    &:before {
-      position: absolute;
-      content: '';
-      right: -1.7rem;
-      @extend %vam;
-      width: 0.3rem;
-      height: 2.5rem;
-      background: #000000;
-      opacity: 0.3;
-    }
-  }
-
-  .owl-item.active + .owl-item.active + .owl-item.active &__item {
-
-    &:before {
-      display: none;
     }
   }
 }

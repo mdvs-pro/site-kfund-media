@@ -15,6 +15,7 @@ $dark_color:                #313131;
 $border_color:              #f4f4f4;
 
 $color_social:              #999999;
+$color_slider-mind:         #eef4f8;
 
 
 // Fonts
@@ -108,9 +109,6 @@ $grid-breakpoints: (
 //  Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
         xl: 1300px
 ) !default;
 @include _assert-ascending($container-max-widths, "$container-max-widths");

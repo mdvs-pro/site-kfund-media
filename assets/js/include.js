@@ -35,8 +35,21 @@ function initSliders(){
 		margin:40,
 		nav:true,
 		stagePadding:40,
-		loop:true,
-		navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+		loop: false,
+		mouseDrag :false,
+		touchDrag: false,
+		navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+		responsive:{
+			0:{
+				items:1
+			},
+			800:{
+				items:2
+			},
+			1200:{
+				items: 3
+			}
+		}
 	});
 }
 
