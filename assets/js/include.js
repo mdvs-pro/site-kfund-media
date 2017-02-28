@@ -32,13 +32,16 @@ var mobileNav = {
 
 function initSliders(){
 	$('.js_ideas__slider').owlCarousel({
-		margin:40,
+		margin:0,
 		nav:true,
-		stagePadding:40,
-		loop: false,
+		stagePadding:0,
+		loop: true,
 		mouseDrag :false,
 		touchDrag: false,
-		navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+		autoplay: true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
+		navText:['<i class="kf-icon kf-icon-left-open-big" aria-hidden="true"></i>','<i class="kf-icon kf-icon-right-open-big" aria-hidden="true"></i>'],
 		responsive:{
 			0:{
 				items:1

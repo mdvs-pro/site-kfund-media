@@ -36,6 +36,11 @@
 
   &__search {
     color: $color_social;
+
+    .icon__search {
+      font-size: 1.5rem;
+      color: #999;
+    }
   }
 }
 

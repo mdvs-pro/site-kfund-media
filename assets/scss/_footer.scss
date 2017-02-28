@@ -16,6 +16,13 @@
     }
   }
 
+  &__socials {
+
+    .kf-icon {
+      vertical-align: bottom;
+    }
+  }
+
   &-bottom {
     background: $secondary_color;
     padding-top: 2.5rem;
