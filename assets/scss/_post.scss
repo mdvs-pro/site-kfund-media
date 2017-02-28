@@ -1,10 +1,21 @@
 .post {
-  padding: 2.308rem 0 1.738rem;
+  padding: 1.308rem 0em 1.738rem;
 
   &__type {
     font-size: 1.341rem;
     color: $secondary_color;
     font-weight:400;
+  }
+
+  &__lists &__type {
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.41rem;
+  }
+
+  &__lists h2 {
+    font-size: 2.354rem;
+    line-height: 2.7rem;
   }
 
   &__special {
@@ -72,4 +83,3 @@
     color: $color-white;
   }
 }
-
