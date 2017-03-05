@@ -5,7 +5,7 @@
     <title>Single Page</title>
     //= partials/inc-head.html
 </head>
-<body class="single">
+<body class="archive">
 
 //= partials/top-panel.html
 //= partials/header.html
@@ -15,10 +15,15 @@
 
 <div id="primary" class="content-area container">
     <div class="row">
-        <div class="col-12 breadcrumbs">
-            <span class="breadcrumbs__item">підприємництво</span> → <span class="breadcrumbs__item breadcrumbs__item--active">історія успіху</span>
-        </div>
         <main id="main" class="site-main col-xl-9 column column--border-r" role="main">
+            <header class="page-header archive__header">
+                <h1 class="page-title archive__name">Книги</h1>
+                <div class="archive__cat-list cat-list">
+                    <a href="#" class="cat-list__item link">Рецензии</a>
+                    <a href="#" class="cat-list__item link">Инсайт</a>
+                    <a href="#" class="cat-list__item link">Книготека</a>
+                </div>
+            </header><!-- .page-header -->
             //= partials/content.html
         </main>
 

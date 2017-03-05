@@ -1,0 +1,54 @@
+.archive {
+
+  &__header {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-family: $primary_font;
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: $secondary_color;
+      @extend %ibm;
+    }
+  }
+
+  &__cat-list {
+    @extend %ibm;
+    margin-left: 3rem;
+    padding-left: 3rem;
+    border-left: 1px solid #ccc;
+  }
+
+  .cat-list {
+
+    &__item {
+      @extend %ibm;
+      position: relative;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $dark_color; 
+      margin-right: 4rem;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        @extend %vam;
+        right: -2.35rem;
+        background: $dark_color;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 100%;
+      }
+    }
+
+    &__item:last-child {
+      margin-right: 0rem;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
