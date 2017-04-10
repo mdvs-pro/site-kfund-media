@@ -39,8 +39,7 @@
 		src: url('assets/fonts/'+ $file-name + '.eot');
 		src: url('assets/fonts/'+ $file-name + '.eot?#iefix')  format('embedded-opentype'),
 					 url('assets/fonts/'+ $file-name + '.woff') format('woff'),
-					 url('assets/fonts/'+ $file-name + '.ttf')  format('truetype'),
-					 url('assets/fonts/'+ $file-name + '.svg##{$font-name}')  format('svg');
+					 url('assets/fonts/'+ $file-name + '.ttf')  format('truetype');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -78,7 +77,7 @@
 
 //-------------Font Face---------------------------
 
-@mixin font-face($name, $file_name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+@mixin font-face($name, $file_name, $path, $weight: null, $style: null, $exts: eot woff ttf) {
 	$src: null;
 
 	$extmods: (
