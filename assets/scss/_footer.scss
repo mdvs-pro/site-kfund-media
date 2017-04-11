@@ -1,14 +1,18 @@
 .footer {
   margin-top: 3.5rem;
 
+  .single & {
+    margin-top: 0;
+  }
+
   p {
     margin-bottom: 0;
   }
 
   &-top {
     @extend %bg-gradient-gray;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 
     &__div {
       align-self: center;

@@ -1,6 +1,10 @@
 .post {
   padding: 1.308rem 0em 1.738rem;
 
+  &--vlist {
+    clear: both;
+  }
+
   &__type {
     font-size: 1.341rem;
     color: $secondary_color;
