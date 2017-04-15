@@ -9,6 +9,12 @@
     font-size: 1.341rem;
     color: $secondary_color;
     font-weight:400;
+
+    //under heading 
+    &--uh {
+      display: block;
+      margin-bottom: 1rem;
+    }
   }
 
   &__lists &__type {

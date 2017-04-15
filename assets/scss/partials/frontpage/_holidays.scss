@@ -6,8 +6,16 @@
 
 .parallax {
 
-  &__mobile {
+  &__mobile:after {
     @include media-breakpoint-down(sm) {
+      content: "";
+      opacity: 0.35;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1;   
       background-image: url(assets/images/easter/easter-el-2.png);
       background-repeat: no-repeat;
       background-position: 100% 100%;
@@ -17,7 +25,8 @@
 
   &__post {
     @include media-breakpoint-down(sm) {
-      background: rgba(255,255,255,0.73);
+      position: relative;
+      z-index: 2;
     }
   }
 
