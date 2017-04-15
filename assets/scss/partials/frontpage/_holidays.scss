@@ -18,9 +18,12 @@
   overflow:hidden; 
 }
 
+.mouseCanvas {
+  position: absolute;
+  width: 100%; }
+
  .parallax-layer {
    position: absolute;
    width: 100%;
    height: 100%;
-   transition: top, bottom, left, right, 0.3s;
  }

@@ -1,7 +1,5 @@
 jQuery(document).ready(function ($) {
 	initSliders();
-	// mouseport:'.parallax-viewport'
-	$('.parallax-layer').parallax({}, {}, {xparallax: '10px'});
 });
 
 jQuery(window).load(function () {
