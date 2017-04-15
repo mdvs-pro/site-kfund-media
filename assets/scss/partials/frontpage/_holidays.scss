@@ -1,5 +1,5 @@
 .holidays {
-  background-image: url(assets/images/easter-bg.jpg);
+  background-image: url(assets/images/easter/easter-bg-min.jpg);
   background-size: 100% 100%;
   height: 410px;
 }
@@ -11,4 +11,16 @@
  .egg-0 {
    right: 100px;
    bottom: 40px;
+ }
+
+.parallax-viewport { 
+  position:relative; 
+  overflow:hidden; 
+}
+
+ .parallax-layer {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   transition: top, bottom, left, right, 0.3s;
  }
