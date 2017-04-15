@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 	initSliders();
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
 });
 
 jQuery(window).load(function () {
