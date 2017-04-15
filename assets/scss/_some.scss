@@ -210,3 +210,14 @@ blockquote {
 		color: $secondary_color;
 	}
 }
+
+.container {
+
+	&--full-h {
+		height: 100%;
+
+		.row {
+			height: 100%;
+		}
+	}
+}
