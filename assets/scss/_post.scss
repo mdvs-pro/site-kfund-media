@@ -5,6 +5,15 @@
     clear: both;
   }
 
+  &__archive-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    .post__author {
+      margin-right: 3rem;
+    }
+  }
+
   &__type {
     font-size: 1.341rem;
     color: $secondary_color;

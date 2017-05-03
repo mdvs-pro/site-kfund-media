@@ -2,22 +2,41 @@
 
   &__header {
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
+  }
 
-    h1 {
-      font-family: $primary_font;
-      font-size: 2.3rem;
-      font-weight: 500;
-      color: $secondary_color;
-      @extend %ibm;
-    }
+  &__name {
+    font-family: $primary_font;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: $secondary_color;
+  }
+
+  &__breadlink {
+    @extend %ibm;
+  }
+
+  &__sub-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $dark_color;
   }
 
   &__cat-list {
+    position: relative;
     @extend %ibm;
     margin-left: 3rem;
     padding-left: 3rem;
-    border-left: 1px solid #ccc;
+
+    &:before {
+      content: '';
+      position: absolute;
+      @extend %vam;
+      width: .1rem;
+      height: 2.7rem;
+      background: #cccccc;
+      left: 0;
+    }
   }
 
   .cat-list {
@@ -28,7 +47,14 @@
       font-size: 1.4rem;
       font-weight: 500;
       color: $dark_color; 
-      margin-right: 4rem;
+      margin-right: 1rem;
+      border: .2rem solid transparent;
+      padding: 0.9rem 1.3rem;
+      border-radius: .2rem;
+
+      &.active {
+        border-color: $secondary_color;
+      }
 
       &:after {
         position: absolute;
