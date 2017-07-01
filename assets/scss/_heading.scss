@@ -1,0 +1,40 @@
+.heading {
+	display: block;
+	position: relative;
+	font-size: 1.7rem;
+	font-weight: 600;
+	padding-top: 1rem;
+	color: #313131;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		width: 2.5rem;
+		background: $secondary_color;
+		height: 0.3rem;
+	}
+
+	&--left {
+		float: left;
+		width: 13rem;
+		padding-right: 1.584rem;
+		font-size: 1.584rem;
+		font-weight: 500;
+	}
+
+	&--left + div {
+		overflow: hidden;
+	}
+
+	&--top {
+		margin-bottom: 1.538rem;
+		font-size: 1.584rem;
+		font-weight: 500;
+	}
+
+	.widget-area &--top {
+		margin-bottom: 0;
+	}
+}

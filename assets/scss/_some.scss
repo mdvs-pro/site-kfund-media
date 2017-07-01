@@ -12,6 +12,35 @@ body {
 	font-weight: 300;
 	line-height: 2.4rem;
 	color: $primary_color;
+
+	&.search-active {
+    overflow: hidden;
+	}
+
+	&.search-active .search-input {
+			opacity: 1;
+			pointer-events: all;
+			z-index: 101;
+	}
+
+	&.search-active .search__close {
+			opacity: 1;
+			transform: rotate(-90deg);
+			z-index: 101;
+	}
+
+	&.search-active .control {
+			cursor: default;
+	}
+
+	&.search-active .btn-material {
+			transform: scale(300);
+			background: $secondary_color;
+	}
+
+	&.search-active .icon-material-search {
+			opacity: 0;
+	}
 }
 
 h1, .h1 {
@@ -47,6 +76,12 @@ h4, .h4 {
 	text-transform: uppercase;
 }
 
+hr {
+    border: none;
+    border-bottom: 0.1rem solid $color_gray;
+    padding-top: 3rem;
+}
+
 p {
 	margin-bottom: 1.538rem;
 }
@@ -58,6 +93,10 @@ a {
 
 strong, b, .strong {
 	font-weight: 500;
+}
+
+figcaption {
+    text-align: right;
 }
 
 .img--responsive {
@@ -132,47 +171,6 @@ ul {
 
 }
 
-.heading {
-	display: block;
-	position: relative;
-	font-size: 1.7rem;
-	font-weight: 600;
-	padding-top: 1rem;
-	color: #313131;
-
-	&:before {
-		content: '';
-		display: inline-block;
-		position: absolute;
-		top: 0;
-		width: 2.5rem;
-		background: $secondary_color;
-		height: 0.3rem;
-	}
-
-	&--left {
-		float: left;
-		width: 13rem;
-		padding-right: 1.584rem;
-		font-size: 1.584rem;
-		font-weight: 500;
-	}
-
-	&--left + div {
-		overflow: hidden;
-	}
-
-	&--top {
-		margin-bottom: 1.538rem;
-		font-size: 1.584rem;
-		font-weight: 500;
-	}
-
-	.widget-area &--top {
-		margin-bottom: 0;
-	}
-}
-
 .column {
 
 	&--border-r {
@@ -201,13 +199,34 @@ ul {
 }
 
 blockquote {
+	position: relative;
+	font-weight: 500;
+	font-family: "NewBaskervilleC", sans-serif;
+	font-size: 2.5rem;
+	font-style: normal;
+	padding: 4rem 2rem;
+	text-align: center;
+	border-top: 0.1rem solid $color_gray;
+	border-bottom: 0.1rem solid $color_gray;
+
+	p {
+		margin-bottom: 0;
+	}
 
 	&:before {
-		font: 5rem/1 FontAwesome;
-		content: "\f10d";
-		display: block;
-		text-decoration: inherit;
-		color: $secondary_color;
+		content: "\6e";
+    font-family: "kfund-font";
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    background: $bgcolor;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0 5rem;
+	}
+
+	.entry-content & {
+		@extend blockquote;
 	}
 }
 

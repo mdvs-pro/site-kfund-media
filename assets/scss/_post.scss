@@ -116,4 +116,18 @@
   &--clr-white a {
     color: $color-white;
   }
+
+  &__publisher {
+    padding: 1rem 0rem;
+    border-top: 0.1rem solid color_gray;
+    border-bottom: 0.1rem solid color_gray;
+    line-height: 1.3;
+    font-weight: 400;
+
+    span {
+      display: block;
+      font-weight: 400;
+      color: $secondary_color;
+    }
+  }
 }

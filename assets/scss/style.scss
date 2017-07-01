@@ -5,7 +5,7 @@ Theme URI: kfund-media.com
 Author: kfund-media
 Author URI: kfund-media.com
 Description: Stylish news platform
-Version: 0.0.7
+Version: 0.0.8
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: kfund_media
@@ -29,6 +29,7 @@ Tags:
 @import "_some";			// general styles
 @import "_btnsIcons";
 @import "_header";
+@import "_heading";
 @import "_footer";
 @import "_sidebar";		    // sidebar and sidebar widgets
 @import "_excerpt";
