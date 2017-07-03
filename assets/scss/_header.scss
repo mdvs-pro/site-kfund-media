@@ -1,11 +1,12 @@
 .header {
   background: $color_white;
   padding: 1.5rem 0 2rem 0;
+  margin-bottom: 0;
 
   &__column {
     align-self: center;
 
-    &--right {
+    &--right {  
       text-align: right;
     }
   }

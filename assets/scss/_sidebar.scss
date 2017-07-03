@@ -1,3 +1,8 @@
+%pt0bt0 {
+  padding-top: 0;
+  border-top: none;
+}
+
 .sidebar {
 
   &__content {
@@ -6,13 +11,17 @@
       border-top: none;
       padding-top: 0;
     }
+    
+    .heading--top + .post {
+     @extend %pt0bt0; 
+    }
+
 
     .post {
       border-top: 0.1rem solid $color_gray;
 
       &:first-child {
-        padding-top: 0;
-        border-top: none;
+        @extend %pt0bt0
       }
 
       &:last-child {

@@ -194,7 +194,9 @@ ul {
 }
 
 .logo {
+	position: relative;
 	@extend %ibm;
+	width: auto;
 	width: 32.4rem;
 }
 
@@ -243,4 +245,32 @@ blockquote {
 
 .col--full-h {
 	height: 100%;
+}
+
+.best-list {
+
+	.post__more {
+		visibility: hidden;
+	}
+}
+
+.post-list {
+	padding-top: 0;
+
+	.post {
+		overflow: hidden;
+	}
+
+	& > post::first-child {
+		padding-top: 0;
+	}
+}
+
+.quotes-slider {
+	display: flex;
+	justify-content: space-around;
+
+	&__item {
+    flex: 0 0 31%;
+	}
 }
