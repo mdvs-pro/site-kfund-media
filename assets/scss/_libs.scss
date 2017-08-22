@@ -153,22 +153,12 @@
   }
 
   &__img {
-    @include animation(opacity, visibility);
-    opacity: 1;
-
-    &--color {
-      visibility: hidden;
-      opacity: 0;
-    }
+    @include animation(filter);
+    filter: grayscale(1);
   }
 
   &__item:hover &__img {
-
-
-    &--color {
-      visibility: visible;
-      opacity: 1;
-    }
+    filter: grayscale(0);
   }
 
   &__author {

@@ -1,0 +1,84 @@
+.post-template-interview-single {
+
+  #primary {
+    border-top: .3rem solid $secondary_color
+  }
+
+  .site-main {
+    background: $color_white;
+    padding: 4rem 3.5rem
+  }
+
+  .read-also,
+  .footer,
+  .post__bottom-additional,
+  .interview__images {
+      position: relative;
+  }
+
+  .interview__img {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: 130%;
+    background-attachment: fixed;
+
+    position: absolute;
+    top: 0;
+  }
+
+  .post__bottom-additional {
+    background: $bgcolor;
+    padding: 3rem 0;
+  }
+
+  // DISABLE GRID HACK
+  .single__excerpt,
+  .single__tagtype,
+  .single__meta--center,
+  .column-full-image .col-md-10,
+  .single__text > * {
+      margin-left: 0;
+      margin-right: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .column-list-text .col-md-8 {
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+  }
+  // END DISABLE GRID HACK
+
+  .prlx__meta,
+  .prlx__meta .post__date,
+  .prlx__meta a {
+      color: #999999;
+      font-size: 1.4rem;
+      font-weight: 400;
+  }
+
+  .prlx__meta {
+      border-top: .1rem solid;
+      border-bottom: .1rem solid;
+      margin-bottom: 3rem;
+      width: 100%;
+      padding: .8rem .2rem;
+  }
+
+  .single__meta-ut {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .header__lang-switch {
+      font-weight: 400;
+  }
+
+  .single__excerpt {
+      padding-top: 3rem;
+  }
+}

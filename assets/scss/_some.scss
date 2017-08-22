@@ -197,7 +197,7 @@ ul {
 	position: relative;
 	@extend %ibm;
 	width: auto;
-	width: 32.4rem;
+	max-width: 32.4rem;
 }
 
 blockquote {
@@ -237,7 +237,7 @@ blockquote {
 	&--full-h {
 		height: 100%;
 
-		.row {
+		& > .row {
 			height: 100%;
 		}
 	}
