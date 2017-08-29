@@ -1,0 +1,127 @@
+@include font-face('kfund-font', 'kfund', 'assets/fonts/kfund/kfund-font-icon', 400, normal);
+
+/*
+kFund-icon
+powered by http://app.fontastic.me/
+*/
+
+// Social
+$socials: (
+  facebook:   #3b5998,
+  vk:         #45668e,
+  linkedin:   #0177b5,
+  gplus:      #dd4b39,
+  telegram:   #12699b,
+  pinterest:  #dd4b39,
+  instagram:  #12699b,
+  fb-mess:    #3b5998,
+  pocket:     #ed4055,
+  twitter:    #00aced,
+);
+
+.kf-icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    font: normal normal normal 14px/1 "kfund-font";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+}
+
+.kf-icon-left-open-big:before {
+  content: "\61";
+}
+.kf-icon-right-open-big:before {
+  content: "\62";
+}
+.kf-icon-arrow-right:before {
+  content: "\63";
+}
+.kf-icon-facebook:before {
+  content: "\64";
+}
+.kf-icon-twitter:before {
+  content: "\65";
+}
+.kf-icon-youtube:before {
+  content: "\66";
+}
+.kf-icon-vk:before {
+  content: "\68";
+}
+.kf-icon-gplus:before {
+  content: "\69";
+}
+.kf-icon-rss:before {
+  content: "\6a";
+}
+.kf-icon-usd:before {
+  content: "\6b";
+}
+.kf-icon-eur:before {
+  content: "\6c";
+}
+.kf-icon-search:before {
+  content: "\6d";
+}
+.kf-icon-quotes:before {
+  content: "\6e";
+}
+.kf-icon-close:before {
+  content: "\6f";
+}
+.kf-icon-tags:before {
+  content: "\70";
+}
+.kf-icon-arrow-left-c:before {
+  content: "\71";
+}
+.kf-icon-linkedin:before {
+  content: "\72";
+}
+.kf-icon-tumblr:before {
+  content: "\73";
+}
+.kf-icon-telegram:before {
+  content: "\75";
+}
+.kf-icon-pinterest:before {
+  content: "\76";
+}
+.kf-icon-instagram:before {
+  content: "\67";
+}
+.kf-icon-calendar:before {
+  content: "\74";
+}
+.kf-icon-android-time:before {
+  content: "\77";
+}
+.kf-icon-user:before {
+  content: "\78";
+}
+.kf-icon-camera:before {
+  content: "\79";
+}
+.kf-icon-fb-mess:before {
+  content: "\7a";
+}
+.kf-icon-pocket:before {
+  content: "\41";
+}
+.r180 {
+  transform: rotate(180deg);
+} 
+.r270 {
+  transform: rotate(270deg);
+}
+
+// generate svg on colors
+
+@each $key, $value in $socials {
+  .kf-icon-#{$key}--color {
+    color: $value;
+  }
+}
